@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+	font:12px "微软雅黑"
+}
+em,b,i,strong{
+	font-style:normal;
+	font-weight:normal;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/* 定义字体图标 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../download/iconfont.eot');
+    src: url('../download/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../download/iconfont.woff2') format('woff2'),
+        url('../download/iconfont.woff') format('woff'),
+        url('../download/iconfont.ttf') format('truetype'),
+        url('../download/iconfont.svg#iconfont') format('svg');
+  }
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
