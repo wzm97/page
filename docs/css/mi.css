@@ -1,0 +1,546 @@
+.inner {
+    width: 1226px;
+    margin: 0 auto;
+}
+.top-menu {
+    background: #232323;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    /* overflow: hidden; */
+}
+.top-menu a {
+    color: #b0b0b0;
+    display: inline-block;
+}
+.top-menu span {
+    color: #424242;
+    margin: 0 0.5em;
+}
+.top-menu a:hover {
+    color: #fff;
+}
+
+/* 左边导航 */
+.topbar-navl {
+    float: left;
+}
+/* 下载APP-二级效果 */
+#J_downloadapp {
+    /* 包含块 */
+    position: relative;
+}
+#J_downloadapp .box {
+    background: lightpink;
+    position: absolute;
+    top: 40px;
+    width: 124px;
+    text-align: center;
+    padding: 18px 0 14px;
+    left: 50%;
+    margin-left: -62px;
+    display: none;
+    z-index: 10000;
+}
+/* 三角 */
+#J_downloadapp .box em {
+    width: 0;
+    height: 0;
+    display: block;
+    border: 10px solid transparent;
+    border-bottom-color: lightpink;
+    border-top: 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    top: -10px;
+}
+#J_downloadapp .box img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+}
+#J_downloadapp .box span {
+    display: block;
+    line-height: 20px;
+}
+#J_downloadapp:hover .box {
+    display: block;
+}
+/* 右边导航盒子 */
+.topbar-navr {
+    float: right;
+}
+.topbar-navr p {
+    margin-right: 15px;
+}
+.topbar-shopcar {
+    background: #424242;
+    width: 120px;
+    text-align: center;
+    /* 包含块 */
+    position: relative;
+}
+.topbar-shopcar > a {
+    position: relative;
+    z-index: 10000;
+    width: 100%;
+}
+.topbar-shopcar:hover a {
+    color: darkorange;
+    background: #fff;
+    width: 100%;
+}
+/* 二级购物车 */
+.sub-shopcar {
+    width: 340px;
+    height: 100px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    line-height: 100px;
+    display: none;
+    z-index: 9999;
+    /* 2px 水平右边 2px 垂直下 4px 模糊距离 ,-2px 水平左  -2px 垂直上*/
+    /* box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2),
+        -2px -2px 4px 0 rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+}
+.topbar-shopcar:hover .sub-shopcar {
+    display: block;
+}
+/* 头部中间盒子代码 */
+.middle-logo {
+    /* 包含块 */
+    position: relative;
+}
+/* logo */
+.logo {
+    margin-top: 22px;
+}
+.logo a {
+    display: block;
+    width: 55px;
+    height: 55px;
+    background: darkorange;
+    text-align: center;
+}
+/* nav */
+.nav li {
+    float: left;
+}
+.nav > li > a {
+    color: #000;
+}
+.nav > li:nth-child(1) {
+    width: 142px;
+    /* 隐藏元素，但是元素的空间会被保留 */
+    visibility: hidden;
+}
+.nav > li > a {
+    padding: 0 10px;
+    display: block;
+    height: 100px;
+    line-height: 100px;
+}
+.nav > li > a:hover {
+    color: darkorange;
+}
+/* 二级导航 */
+.subnav {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    left: 0;
+    /* height: 230px; */
+    height: 0;
+    transition: height 0.2s;
+    overflow: hidden;
+    z-index: 9999;
+}
+.subnav img {
+    width: 160px;
+    height: 110px;
+}
+.subnav li {
+    width: 180px;
+    padding: 35px 12px 0;
+    text-align: center;
+    /* 包含块 */
+    position: relative;
+}
+.subnav li a {
+    color: #b0b0b0;
+}
+.subnav li span {
+    color: darkorange;
+}
+.subnav li p {
+    padding-top: 10px;
+}
+.subnav li::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 110px;
+    background: #b0b0b0;
+    position: absolute;
+    top: 35px;
+    right: 0;
+}
+.subnav li:last-child::after {
+    content: "";
+    display: none;
+}
+.nav > li:hover .subnav {
+    height: 230px;
+    border-top: 1px solid #333;
+    /* 设置盒子阴影  
+    外阴影 x + 右  - 左  y + 下 - 上 
+    内阴影 x + 左 - 右   y+ 上 - 下
+    */
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+}
+/* search */
+.search-box form {
+    margin-top: 25px;
+    position: relative;
+}
+.search-box input {
+    vertical-align: top;
+    outline: none;
+}
+.search-box input[type="text"] {
+    width: 223px;
+    height: 48px;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+    border-right: 0;
+}
+.search-box input[type="submit"] {
+    width: 52px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    background: url(../img/mi-logo.png) no-repeat center center/20px 20px;
+}
+.search-box input[type="submit"]:hover {
+    background-color: darkorange;
+    border-color: darkorange;
+}
+.search-box span {
+    background: #b0b0b0;
+    padding: 0 5px;
+    position: absolute;
+    top: 15px;
+    transition: all 0.2s;
+}
+.search-box span a {
+    color: #333;
+}
+.search-box .mi9 {
+    right: 130px;
+}
+.search-box .mi9-se {
+    right: 60px;
+}
+.search-box span:hover {
+    background: darkorange;
+}
+.search-box span:hover a {
+    color: #fff;
+}
+/* banner */
+.banner {
+    /* 包含块 */
+    position: relative;
+}
+.banner img {
+    width: 100%;
+}
+.banner p {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+.banner p a {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #b0b0b0;
+    border: 2px solid #f00;
+    text-indent: -999px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.banner p a:hover {
+    background: #fff;
+}
+.banner .arrow span {
+    width: 40px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+}
+.left-arrow {
+    left: 234px;
+}
+.right-arrow {
+    right: 0px;
+}
+.left-arrow::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #b0b0b0;
+    border-left: 2px solid #b0b0b0;
+    width: 20px;
+    height: 20px;
+    /* 转换 rotate(deg) + 顺时针  -逆时针 */
+    transform: rotate(-45deg);
+    margin-left: 15px;
+    margin-top: 27px;
+}
+.right-arrow::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #b0b0b0;
+    border-right: 2px solid #b0b0b0;
+    width: 20px;
+    height: 20px;
+    /* 转换 rotate(deg) + 顺时针  -逆时针 */
+    transform: rotate(45deg);
+    margin-right: 15px;
+    margin-top: 27px;
+}
+.arrow span:hover {
+    background: #b0b0b0;
+}
+.arrow span:hover:before {
+    border-color: #fff;
+}
+/* aside-nav */
+.header-bottom .inner {
+    /* 包含块 */
+    position: relative;
+}
+.laside-nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #333;
+    width: 234px;
+}
+.nav-content {
+    padding: 20px 0;
+    /* 包含块 */
+    position: relative;
+}
+.nav-content > li > a {
+    color: #fff;
+    line-height: 42px;
+    display: block;
+    text-indent: 2em;
+}
+.nav-content > li:hover {
+    background: darkorange;
+}
+/* 侧边的二级导航 */
+.laside-subnav {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 234px;
+    /* calc = 计算   + - * / */
+    width: calc(1226px - 233px);
+    background: #fff;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.laside-subnav li {
+    float: left;
+    width: 248px;
+    height: 76px;
+}
+.laside-subnav img {
+    width: 40px;
+    height: 40px;
+}
+.laside-subnav a {
+    color: #000;
+    display: block;
+    padding: 10px 0 0 20px;
+}
+.nav-content > li:hover .laside-subnav {
+    display: block;
+}
+/* 底部产品列表 */
+.produce-all {
+    padding: 20px 0 40px;
+}
+.produce-list {
+    width: 234px;
+    padding: 3px 0;
+    background: #5f5750;
+}
+.produce-list li {
+    text-align: center;
+    float: left;
+    width: 78px;
+    height: 82px;
+    position: relative;
+}
+/* 线条2 ~ 5左右 */
+.produce-list li:nth-child(2)::before,
+.produce-list li:nth-child(5)::before,
+.produce-list li:nth-child(2)::after,
+.produce-list li:nth-child(5)::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 70px;
+    background: #665e57;
+    position: absolute;
+    top: 4px;
+}
+.produce-list li:nth-child(2)::before,
+.produce-list li:nth-child(5)::before {
+    left: 0;
+}
+.produce-list li:nth-child(2)::after,
+.produce-list li:nth-child(5)::after {
+    right: 0;
+}
+.produce-list li:nth-child(1)::after,
+.produce-list li:nth-child(3)::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 1px;
+    background: #665e57;
+    position: absolute;
+    bottom: 0;
+    left: 7px;
+}
+
+.produce-list li a {
+    color: rgba(255, 255, 255, 0.7);
+    padding-top: 30px;
+    display: block;
+}
+.produce-img a:nth-child(1) {
+    margin-left: 0;
+}
+.produce-img a {
+    margin-left: 15px;
+}
+.produce-img img {
+    width: 316px;
+    height: 170px;
+}
+.mi-cc img {
+    width: 100%;
+}
+/* --------------main ------ */
+.main {
+    background: #f5f5f5;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+/* phone-box */
+.phone-box h2 {
+    color: #333;
+    line-height: 58px;
+}
+.phone-box h2 span {
+    font-size: 22px;
+}
+.phone-box h2 a {
+    color: #333;
+    font-size: 14px;
+    float: right;
+    transition: color 0.2s;
+}
+.phone-box h2 a:hover {
+    color: darkorange;
+}
+
+.game-phone {
+    width: 234px;
+}
+.game-phone img {
+    width: 100%;
+}
+.game-phone-item {
+    width: 978px;
+    /* perspective: 1000px; */
+}
+
+.game-phone-item li {
+    float: left;
+    background: #fff;
+    padding: 20px 0;
+    margin: 0 0 14px 14px;
+    width: 234px;
+    text-align: center;
+    height: 260px;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+.game-phone-item li:first-child,
+.game-phone-item li:nth-child(5) {
+    margin-left: 0;
+}
+.game-phone-item li img {
+    width: 160px;
+    height: 160px;
+}
+.game-phone-item li a span {
+    display: block;
+    color: #333;
+    margin-top: 18px;
+}
+.game-phone-item .phone-desc {
+    padding: 0 10px;
+    color: #b0b0b0;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 2px 0 10px;
+}
+.phone-price {
+    color: darkorange;
+}
+.game-phone-item li:hover {
+    /* 2px - 右   2px - 下*/
+    box-shadow: 4px 2px 8px 0 rgba(0, 0, 0, 0.1),
+        -4px 0 8px 0 rgba(0, 0, 0, 0.1);
+    /* margin-top: -3px; */
+    /* transform: rotateZ(360deg); */
+    /* transform: translateZ(-300px); */
+    /* transform: scale(0, 0); */
+    transform: translateY(-3px);
+}
+/* 评估价 */
+.phone-rating {
+    background: darkorange;
+    height: 90px;
+    color: #fff;
+    padding: 0 20px;
+    position: absolute;
+    left: 0;
+    bottom: -90px;
+    transition: all 0.3s;
+}
+.phone-rating p {
+    margin: 12px 0;
+}
+.phone-rating span {
+    color: rgba(255, 255, 255, 0.6);
+}
+.game-phone-item li:hover .phone-rating {
+    bottom: 0;
+}
